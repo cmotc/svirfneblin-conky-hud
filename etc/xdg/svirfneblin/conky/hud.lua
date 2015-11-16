@@ -1,3 +1,7 @@
+local awful = require("awful")
+awful.rules = require("awful.rules")
+require("awful.autofocus")
+local gears = require("gears")
 do
     local conky = nil
 
@@ -18,7 +22,7 @@ do
         get_conky({}).ontop = false
     end
 
-    local t = gears.timer({ timeout = 0.01 })
+    local t = timer({ timeout = 0.01 })
     t:connect_signal("timeout", function()
         t:stop()
         lower_conky()
