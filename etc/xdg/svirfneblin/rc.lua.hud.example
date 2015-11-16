@@ -12,10 +12,11 @@ local calladuran = require("calladuran")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-
+-- Configure Conky-based Heads Up Display
+require("conky.hud")
 -- Load Debian menu entries
 require("debian.menu")
-require("conky.hud")
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -228,7 +229,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
-
+    awful.key({}, "Pause", function() toggle_conky() end),
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
