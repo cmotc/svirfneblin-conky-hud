@@ -57,7 +57,7 @@ Homepage: https://www.github.com/svirfneblin-conky-hud
 
 Package: $DEBFOLDER
 Architecture: all
-Depends: lightdm, lightdm-gtk-greeter, awesome (>= 3.4), conky, svirfneblin-panel, svirfneblin-session, svirfneblin-conky-starter, \${misc:Depends}
+Depends: lightdm, lightdm-gtk-greeter, awesome, conky, svirfneblin-panel, svirfneblin-session, svirfneblin-conky-starter, \${misc:Depends}
 Description: A modified version of the debian rc.lua which starts conky, and
  a script which makes sure svirfneblinwm only starts it once.
 " > debian/control
