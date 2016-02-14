@@ -42,7 +42,6 @@ echo usr/bin/$SOURCEBIN usr/bin > debian/install
 echo etc/conkyrc etc/conkyrc >> debian/install 
 echo etc/xdg/svirfneblin/rc.lua.hud.example etc/xdg/svirfneblin >> debian/install
 echo etc/xdg/svirfneblin/$SOURCEHUD etc/xdg/svirfneblin/$SOURCEDIR >> debian/install
-echo etc/xdg/svirfneblin/debian/menu.lua etc/xdg/svirfneblin/debian/ >> debian/install
 echo usr/share/doc/$DEBFOLDER/$SOURCEDOC usr/share/doc/$DEBFOLDER >> debian/install
 
 echo "Source: $DEBFOLDER
